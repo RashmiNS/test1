@@ -1,6 +1,6 @@
 driver = webdriver.Chrome(C:/Python27/Chromedriver)
 *** Settings ***
-Documentation           This is a simple test with Robot Framework
+Documentation           Login and logout of salesforce
 Library                 SeleniumLibrary
 Library                 C:/Python27/Lib/Login.py
 Suite Teardown          Close Browser
@@ -8,9 +8,9 @@ Suite Teardown          Close Browser
 *** Variables ***
 ${SERVER}               https://test.salesforce.com
 ${BROWSER}              Chrome
-${DELAY}                5
-${Username}             johnson.nelson@abbvie.com.v16dr
-${Password}             welcome1
+${DELAY}                2
+${Username}             brenda.johnson@abbvie.com.v16dr
+${Password}             Abbvie20
 ${xpath1}               //*[@id="username"]
 ${xpath2}               //*[@id="password"]
 
